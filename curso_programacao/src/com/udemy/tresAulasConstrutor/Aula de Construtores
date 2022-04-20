@@ -1,0 +1,16 @@
+
+
+
+MODIFICADORES DE ACESSO
+
+private:
+O membro só pode ser acessado na própria classe
+
+(nada):
+O membro só pode ser acessado nas classes do mesmo pacote
+
+protected:
+O membro só pode ser acessado no mesmo pacote, bem como em subclasses de pacotes diferentes
+
+public:
+O membro é acessado por todas as classes (a menos que ele resida em um módulo diferente que não exporte o pacote que ele está)
