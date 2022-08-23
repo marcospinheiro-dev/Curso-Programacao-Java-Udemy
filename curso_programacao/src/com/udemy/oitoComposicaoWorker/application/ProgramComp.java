@@ -1,9 +1,9 @@
-package com.udemy.oitoComposicao.application;
+package com.udemy.oitoComposicaoWorker.application;
 
-import com.udemy.oitoComposicao.entities.Department;
-import com.udemy.oitoComposicao.entities.HourContract;
-import com.udemy.oitoComposicao.entities.Worker;
-import com.udemy.oitoComposicao.entitiesEnum.WorkerLevel;
+import com.udemy.oitoComposicaoWorker.entities.Department;
+import com.udemy.oitoComposicaoWorker.entities.HourContract;
+import com.udemy.oitoComposicaoWorker.entities.Worker;
+import com.udemy.oitoComposicaoWorker.entitiesEnum.WorkerLevel;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -52,9 +52,6 @@ public class ProgramComp {
         System.out.println("Name: " + worker.getName());
         System.out.println("Department: " + worker.getDepartment().getName());
         System.out.println("Income for " + monthAndYear + ": " + String.format("%.2f", worker.income(year, month)));
-
-
-
 
         sc.close();
     }

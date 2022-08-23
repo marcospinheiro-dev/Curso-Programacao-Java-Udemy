@@ -1,4 +1,4 @@
-package com.udemy.oitoComposicao.entitiesEnum;
+package com.udemy.oitoComposicaoWorker.entitiesEnum;
 
 public enum WorkerLevel {
 

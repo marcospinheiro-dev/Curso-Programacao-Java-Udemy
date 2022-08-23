@@ -1,6 +1,6 @@
-package com.udemy.oitoComposicao.entities;
+package com.udemy.oitoComposicaoWorker.entities;
 
-import com.udemy.oitoComposicao.entitiesEnum.WorkerLevel;
+import com.udemy.oitoComposicaoWorker.entitiesEnum.WorkerLevel;
 
 import java.util.ArrayList;
 import java.util.Calendar;

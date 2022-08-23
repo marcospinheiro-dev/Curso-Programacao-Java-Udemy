@@ -1,4 +1,4 @@
-package com.udemy.oitoComposicao.entities;
+package com.udemy.oitoComposicaoWorker.entities;
 
 import java.util.Date;
 
@@ -29,9 +29,9 @@ public class HourContract {
         return valuePerHour;
     }
 
-//    public void setValuePerHour(Double valuePerHour) {
-//        valuePerHour = valuePerHour;
-//    }
+    public void setValuePerHour(Double valuePerHour) {
+        valuePerHour = valuePerHour;
+    }
 
     public Integer getHours() {
         return hours;

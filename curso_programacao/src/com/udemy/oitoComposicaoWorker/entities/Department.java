@@ -1,4 +1,4 @@
-package com.udemy.oitoComposicao.entities;
+package com.udemy.oitoComposicaoWorker.entities;
 
 public class Department {
 
