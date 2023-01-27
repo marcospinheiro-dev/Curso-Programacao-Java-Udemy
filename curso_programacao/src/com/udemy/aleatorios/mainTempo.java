@@ -1,4 +1,4 @@
-package testTempo;
+package com.udemy.aleatorios;
 
 public class mainTempo {
 
@@ -40,3 +40,9 @@ public class mainTempo {
     }
 
 }
+// R e s p o s t a
+    //O ano tem 24 meses
+    //O ano tem 730 dias
+    //O ano tem 17520 horas
+    //O ano tem 1051200 minutos
+    //O ano tem 63072000 segundos

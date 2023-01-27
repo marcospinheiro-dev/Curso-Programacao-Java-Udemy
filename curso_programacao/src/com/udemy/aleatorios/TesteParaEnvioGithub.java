@@ -1,4 +1,4 @@
-package com.udemy;
+package com.udemy.aleatorios;
 
 public class TesteParaEnvioGithub {
 
