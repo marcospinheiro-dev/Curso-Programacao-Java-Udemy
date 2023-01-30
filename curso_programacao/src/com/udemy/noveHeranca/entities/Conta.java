@@ -1,4 +1,4 @@
-package com.udemy.dezHeranca.entities;
+package com.udemy.noveHeranca.entities;
 
 public class Conta {
 
