@@ -1,0 +1,28 @@
+POLIMORFISMO
+Em POO, é o recurso que permite que variáveis de um mesmo tipo mais genérico possam apontar para objetos de tipos
+diferentes, tendo assim comportamentos diferentes conforme cada tipo específico.
+
+    Conta:
+    public void saque(double montante) {
+    saldo -= montante + 5.0
+    }
+
+    ContaPoupanca:
+    public void saque(double montante) {
+        saldo -= montante
+        }
+
+    Conta x = new Conta (123, "Alex", 1000.0);
+    Conta y = new ContaPoupanca (999, "Ana", 1000.0, 0.01)
+
+    x.saque(50.0)
+    y.saque(50.0)
+
+    Print de x = 945.0
+    Print de y = 950.0
+
+IMPORTANTE
+    * A associação do tipo específico com o tipo genérico é feita em tempo de execução (UPCASTING).
+
+    * O compilador não sabe para qual tipo específico a chamada do método "saque" está sendo feita (ele só sabe que são
+      duas variáveis do tipo "Conta".

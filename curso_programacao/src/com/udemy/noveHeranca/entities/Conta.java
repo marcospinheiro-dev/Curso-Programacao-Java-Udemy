@@ -40,11 +40,13 @@ public class Conta {
 //    }
 
     public void saque(double montante) {
-        saldo -= montante;
+        saldo -= montante + 5.0;
     }
 
     public void deposito(double montante) {
         saldo += montante;
     }
+
+
 
 }
