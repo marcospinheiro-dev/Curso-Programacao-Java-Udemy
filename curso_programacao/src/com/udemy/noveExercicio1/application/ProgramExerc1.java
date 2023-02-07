@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class ProgramExerc {
+public class ProgramExerc1 {
 
     public static void main(String[] args) {
 
