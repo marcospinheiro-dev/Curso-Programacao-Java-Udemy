@@ -21,7 +21,7 @@ public class ProgramExerc1 {
         int n = sc.nextInt();
 
         for (int i = 1; i <=n; i++) {
-            System.out.println("Funcionário #" + i + " data: ");
+            System.out.println("Funcionário #" + i + " : ");
             System.out.print("Terceirizado (y/n)? ");
             char ch = sc.next().charAt(0);
             System.out.print("Nome: ");
