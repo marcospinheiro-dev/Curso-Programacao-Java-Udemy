@@ -41,9 +41,17 @@ public class Reserva {
         // TimeUnit = tipo enumerado complexo para converter milisseg em dias
     }
 
-    public void atualizarReserva(Date checkIn, Date checkOut) {
+    public String atualizarReserva(Date checkIn, Date checkOut) {
+        Date agora = new Date();
+        if (checkIn.before(agora) || checkOut.before(agora)) {
+            return "As datas de reserva devem ser futuras.";
+        }
+        if (!checkOut.after(checkIn)){
+            return "A data de saída deve ser depois da data de entrada.";
+        }
         this.checkIn = checkIn;  // objeto recebe argumento
         this.checkOut = checkOut;
+        return null;
     }
 
     @Override
