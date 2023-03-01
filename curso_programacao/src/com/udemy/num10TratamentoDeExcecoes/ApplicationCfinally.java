@@ -14,14 +14,10 @@ public class ApplicationCfinally {
             sc = new Scanner(file);
             while (sc.hasNextLine()) {
                 System.out.println(sc.nextLine());
-
             }
-
-        }
-        catch (FileNotFoundException e) {
+        } catch (FileNotFoundException e) {
             System.out.println("Erro ao abrir o arquivo: " + e.getMessage());
-        }
-        finally {
+        } finally {
             if (sc != null) {
                 sc.close();
             }
