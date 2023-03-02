@@ -1,5 +1,7 @@
 package com.udemy.num10TratamentoExercicoReservaHotel.model.entities;
 
+import com.udemy.num10TratamentoExercicoReservaHotel.model.exception.DomainException;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
@@ -13,6 +15,9 @@ public class Reserva {
     private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
     public Reserva(Integer numQuarto, Date checkIn, Date checkOut) {
+        if (!checkOut.after(checkIn)){
+            throw new DomainException("A data de saída deve ser depois da data de entrada.");
+        }
         this.numQuarto = numQuarto;
         this.checkIn = checkIn;
         this.checkOut = checkOut;
@@ -41,17 +46,17 @@ public class Reserva {
         // TimeUnit = tipo enumerado complexo para converter milisseg em dias
     }
 
-    public String atualizarReserva(Date checkIn, Date checkOut) {
+    public void atualizarReserva(Date checkIn, Date checkOut) {
         Date agora = new Date();
         if (checkIn.before(agora) || checkOut.before(agora)) {
-            return "As datas de reserva devem ser futuras.";
+            throw new DomainException( "As datas de reserva devem ser futuras.");
+            // IllegalArgumentException usado qdo os argumntos de um método são inválidos.
         }
         if (!checkOut.after(checkIn)){
-            return "A data de saída deve ser depois da data de entrada.";
+            throw new DomainException("A data de saída deve ser depois da data de entrada.");
         }
         this.checkIn = checkIn;  // objeto recebe argumento
         this.checkOut = checkOut;
-        return null;
     }
 
     @Override
