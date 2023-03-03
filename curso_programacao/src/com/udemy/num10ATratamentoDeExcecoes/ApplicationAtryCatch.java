@@ -1,4 +1,4 @@
-package com.udemy.num10TratamentoDeExcecoes;
+package com.udemy.num10ATratamentoDeExcecoes;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

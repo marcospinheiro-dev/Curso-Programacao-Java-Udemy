@@ -1,6 +1,6 @@
-package com.udemy.num10TratamentoExercicoReservaHotel.model.entities;
+package com.udemy.num10BTratamentoExercicoReservaHotel.model.entities;
 
-import com.udemy.num10TratamentoExercicoReservaHotel.model.exception.DomainException;
+import com.udemy.num10BTratamentoExercicoReservaHotel.model.exception.DomainException;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
