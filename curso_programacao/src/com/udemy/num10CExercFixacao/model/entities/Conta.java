@@ -1,10 +1,12 @@
 package com.udemy.num10CExercFixacao.model.entities;
 
+import com.udemy.num10CExercFixacao.model.exception.ContaException;
+
 public class Conta {
 
     private Integer numConta;
     private String titular;
-    private Double saldo = 0.00;
+    private Double saldo;
     private Double limiteSaque;
 
     public Conta() {
@@ -54,16 +56,17 @@ public class Conta {
     }
 
     public void saque(double montante) {
+        validarSaque(montante);
         saldo -= montante;
     }
 
-    public String validarSaque(double montante) {
+    public void validarSaque(double montante) {
         if (montante > getLimiteSaque()) {
-            return "Erro de saque: O valor excedeu o limite de saque";
+            throw new ContaException( "Erro de saque: O valor excedeu o limite de saque");
         }
         if (montante > getSaldo()) {
-            return "Erro de saque: Saldo insuficiente";
+            throw new ContaException("Erro de saque: Saldo insuficiente");
         }
-        return null;
+
     }
 }

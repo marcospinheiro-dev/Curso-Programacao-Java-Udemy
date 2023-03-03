@@ -6,6 +6,7 @@ import com.udemy.num10BTratamentoExercicoReservaHotel.model.exception.DomainExce
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ProgramReservaHotel {
@@ -43,7 +44,7 @@ public class ProgramReservaHotel {
         catch (DomainException e) {
             System.out.println("Erro na reserva: " + e.getMessage());
         }
-        catch (RuntimeException e) {
+        catch (InputMismatchException e) {
             System.out.println("Erro Inesperado!");
         }
 
