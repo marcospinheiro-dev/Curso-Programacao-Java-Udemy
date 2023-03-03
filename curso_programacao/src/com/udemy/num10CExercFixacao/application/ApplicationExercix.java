@@ -27,11 +27,9 @@ public class ApplicationExercix {
         System.out.print("Entre com o valor a sacar: ");
         double montante = sc.nextDouble();
 
-        if (montante > conta.getLimiteSaque()) {
-            System.out.println("Erro de saque: O valor excedeu o limite de saque");
-        }
-        else if (montante > conta.getSaldo()) {
-            System.out.println("Erro de saque: Saldo insuficiente");
+        String error = conta.validarSaque(montante);
+        if (error != null) {
+            System.out.println(error);
         }
         else {
             conta.saque(montante);

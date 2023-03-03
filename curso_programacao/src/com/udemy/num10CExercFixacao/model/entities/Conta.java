@@ -56,4 +56,14 @@ public class Conta {
     public void saque(double montante) {
         saldo -= montante;
     }
+
+    public String validarSaque(double montante) {
+        if (montante > getLimiteSaque()) {
+            return "Erro de saque: O valor excedeu o limite de saque";
+        }
+        if (montante > getSaldo()) {
+            return "Erro de saque: Saldo insuficiente";
+        }
+        return null;
+    }
 }
