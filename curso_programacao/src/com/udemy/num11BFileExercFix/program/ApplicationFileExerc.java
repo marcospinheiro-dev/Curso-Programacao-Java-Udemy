@@ -65,3 +65,4 @@ public class ApplicationFileExerc {
         sc.close();
     }
 }
+// Para executar este programa, antes tem q excluir as pastas que serão criadas, pois já existem por ter sido executado
